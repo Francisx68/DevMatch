@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevMatch - Find Your Perfect Code Companion</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">DevMatch</div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#newsletter">Join Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" data-aos="fade-up">
+            <div class="hero-content">
+                <h1>Find Your Perfect Code Companion</h1>
+                <p>Where developers find their perfect match, one commit at a time.</p>
+                <button class="cta-button" id="start-matching">Start Matching</button>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <h2 data-aos="fade-up">Why Choose DevMatch?</h2>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-code"></i>
+                    <h3>Match by Language</h3>
+                    <p>Find developers who speak your programming language.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Code Together</h3>
+                    <p>Collaborate on projects and build something amazing.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fab fa-git-alt"></i>
+                    <h3>Git Commit to Love</h3>
+                    <p>Share your passion for coding and find your perfect match.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="how-it-works" data-aos="fade-up">
+            <h2>How It Works</h2>
+            <div class="steps-container">
+                <div class="step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-number">1</div>
+                    <h3>Create Your Profile</h3>
+                    <p>Set up your developer profile with your skills, projects, and preferences.</p>
+                </div>
+                <div class="step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">2</div>
+                    <h3>Find Matches</h3>
+                    <p>Our algorithm matches you with compatible developers based on your tech stack.</p>
+                </div>
+                <div class="step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">3</div>
+                    <h3>Start Coding Together</h3>
+                    <p>Connect with your matches and start collaborating on exciting projects.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="newsletter" class="newsletter" data-aos="fade-up">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Join our newsletter for the latest updates and developer stories.</p>
+                <form id="newsletter-form" class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">DevMatch</div>
+            <div class="footer-links">
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#newsletter">Newsletter</a>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 DevMatch. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="signup-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Join DevMatch</h2>
+            <form id="signup-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="">Select Primary Language</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="python">Python</option>
+                        <option value="java">Java</option>
+                        <option value="csharp">C#</option>
+                        <option value="php">PHP</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">Create Account</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
